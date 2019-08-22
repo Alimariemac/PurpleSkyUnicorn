@@ -5,7 +5,6 @@ import {Row, Col} from "reactstrap"
 
 const Footer = ({ siteFooter }) => (
   <Bottom>
-    <Line></Line>
     <Row>
       <Col>
         <Row>

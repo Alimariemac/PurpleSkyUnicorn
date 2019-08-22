@@ -97,14 +97,14 @@ text-transform:uppercase;
 font-family: "Lato", sans-serif;
 font-weight: 700;
 @media (min-width:${s}px) {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 `
 export const H4 = styled(H3)`
 color:#575757;
-font-size: 0.9rem;
+font-size: 0.85rem;
 @media (min-width:${l}px) {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 `
 
@@ -142,29 +142,35 @@ width: 70px;
   width:90px
 }
 `
-export const Container = styled.div`
+export const Base = styled.div `
+width:100%;
+margin-right:auto;
+margin-left:auto;
+padding-right:45px;
+padding-left:45px;
+@media (min-width:${xxs}px) {
+  max-width:350px;
+}
+@media (min-width:${xs}px) {
+ max-width:420px;
+}
+@media (min-width:${s}px) {
+ max-width:600px;
+}
+@media (min-width:${m}px) {
+ max-width:780px
+}
+@media (min-width:${l}px) {
+ max-width:950px
+}
+`
+export const Container = styled(Base)`
  width:100%;
  padding-top:100px;
  padding-bottom:100px;
- padding-right:45px;
- padding-left:45px;
  margin-right:auto;
  margin-left:auto;
- @media (min-width:${xxs}px) {
-   max-width:350px;
- }
-@media (min-width:${xs}px) {
-  max-width:420px;
-}
-@media (min-width:${s}px) {
-  max-width:600px;
-}
-@media (min-width:${m}px) {
-  max-width:780px
-}
-@media (min-width:${l}px) {
-  max-width:950px
-}
+
 `
 export const NumberStyle = styled.div`
 position: absolute;
@@ -293,8 +299,8 @@ padding-top:50px;
 `
 
 export const Bottom = styled(Container)`
-padding-bottom:55px;
-padding-top:55px;
+padding-bottom:100px;
+padding-top:100px;
 `
 
 export const ColorDiv = styled.div`

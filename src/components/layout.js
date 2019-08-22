@@ -14,7 +14,7 @@ import Footer from "./footer"
 import css from "../index.css"
 import ImportedNotebook from "../p5/P5Component"
 import ImportedNotebook2 from "../p5/P5Component2"
-import {Body, Container, AbsoluteDiv, RelDiv, Line} from "../style.js"
+import {Body, Container, AbsoluteDiv, RelDiv, Line, Base} from "../style.js"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -39,6 +39,9 @@ const Layout = ({ children }) => {
         <Container>
             <main>{children}</main>
 </Container>
+  <Base>
+  <Line></Line>
+  </Base>
         <Footer>
         </Footer>
         </AbsoluteDiv>
