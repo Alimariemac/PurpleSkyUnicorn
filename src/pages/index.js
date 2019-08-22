@@ -10,6 +10,8 @@ import Fade from "react-reveal/Fade"
 const Project = ({node})=>{
   return(
     <Col lg="4" className = "mb-3">
+    <Fade ssrFadeout bottom>
+    <div>
            <NumberStyle><H3>{node.order}.</H3></NumberStyle>
            <ProjectBlock>
               <H3>{node.title}</H3>
@@ -18,7 +20,10 @@ const Project = ({node})=>{
               <P>agur blue cheese who moved my cheese everyone loves cow dolcelatte. Stinking bishop blue castello parmesan port-salut edam rubber cheese airedale stinking bishop.</P>
               <StyledLink to={node.slug} addCSS = {leftAlign}>See More</StyledLink>
             </ProjectBlock>
+            </div>
+            </Fade>
     </Col>
+
 
   )
 }
@@ -38,7 +43,7 @@ const IndexPage = ({data}) => (
       </TopView>
       <Padded2>
       </Padded2>
-      <Fade ssrFadeout bottom>
+
           <Row>
 
     <Col>
@@ -47,7 +52,6 @@ const IndexPage = ({data}) => (
         </Row>
         </Col>
   </Row>
-  </Fade>
   </Layout>
 )
 

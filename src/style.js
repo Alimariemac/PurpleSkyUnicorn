@@ -35,22 +35,6 @@ font-family: "Lato", sans-serif;
 `
 
 
-export const LargeP = styled(P)`
-font-size: 0.9rem;
-font-weight: 300;
-margin-bottom:0;
-font-family: "Lato", sans-serif;
-@media (min-width:${xs}px) {
-  font-size: 0.9rem;
-}
-@media (min-width:${s}px) {
-  font-size: 1rem;
-}
-@media (min-width:${l}px) {
-  font-size: 1.6rem;
-}
-`
-
 export const MenuP = styled(P)`
 font-size: 0.9rem;
 font-weight: 400;
@@ -64,6 +48,7 @@ font-family: "Noto Serif JP", serif;
 
 export const IndentP = styled(P)`
 margin-left: 15px;
+font-size:0.75rem;
 `
 export const ListP= styled(IndentP)`
 font-size: 0.75rem;
@@ -160,9 +145,9 @@ width: 70px;
 export const Container = styled.div`
  width:100%;
  padding-top:100px;
+ padding-bottom:100px;
  padding-right:45px;
  padding-left:45px;
- padding-bottom:55px;
  margin-right:auto;
  margin-left:auto;
  @media (min-width:${xxs}px) {
@@ -308,8 +293,8 @@ padding-top:50px;
 `
 
 export const Bottom = styled(Container)`
-padding-bottom:40px;
-padding-top:0px;
+padding-bottom:55px;
+padding-top:55px;
 `
 
 export const ColorDiv = styled.div`
@@ -405,7 +390,6 @@ ${props => props.addcss}
   }
 `
 export const Line = styled.hr `
- border-top: 1px solid black;
- padding-bottom:30px
+ border-top: 1px solid #575757;
 `
 ;
