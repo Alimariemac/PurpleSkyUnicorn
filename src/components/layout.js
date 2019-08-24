@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from "./header"
 import Footer from "./footer"
+import css from "../index.css"
 import ImportedNotebook from "../p5/P5Component"
 import ImportedNotebook2 from "../p5/P5Component2"
 import {Body, Container, AbsoluteDiv, RelDiv, Line, Base} from "../style.js"

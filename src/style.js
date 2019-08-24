@@ -285,6 +285,12 @@ export const Padded2 = styled.div`
   margin-bottom: 6rem;
 }
 `
+
+export const Padded3 = styled.div`
+  margin-bottom: 100px;
+
+`
+
 export const Top = styled.div`
 width:100%;
 padding-right:5%;
