@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
   <Row>
     <Col>
   <StyledLink to = "/" addcss = {leftAlign}>Alicia MacCara</StyledLink>
-  <StyledLink to = "/" addcss = {rightAlign}>About</StyledLink>
+  <StyledLink to = "/about" addcss = {rightAlign}>About</StyledLink>
     </Col>
   </Row>
    </Top>

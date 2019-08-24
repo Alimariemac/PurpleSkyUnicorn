@@ -4,8 +4,9 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import {Row, Col} from 'reactstrap'
-import {rightAlign, leftAlign, StyledLink, HiddenDiv, LayoutPanel, PanelContent, MasonryLayout, IndentP, ListP, P, Padded1, Padded2,H2, H3} from "../style.js"
+import {rightAlign, leftAlign, StyledLink, HiddenDiv, LayoutPanel, PanelContent, MasonryLayout, IndentP, ListP, P, Padded1, Padded2,H2, H3, H1} from "../style.js"
 import Fade from "react-reveal/Fade"
+import SEO from "../components/seo"
 
 class Project extends Component {
   render(){
@@ -22,59 +23,46 @@ class Project extends Component {
     } = this.props.data.contentfulProject
     return (
       <Layout>
-      <Padded2>
+      <SEO title={companyName} />
+      <Padded1>
       <Row>
         <Col>
           <Row>
-          <Col md={{ size: 2}}>
-          <HiddenDiv>
-              <H3>Year</H3>
-              <IndentP>{year}</IndentP>
-              <Padded1></Padded1>
-              <H3>Client</H3>
-              <IndentP>{companyName}</IndentP>
-              <Padded1></Padded1>
-              <H3>Deliverables</H3>
-              {deliverables.map(d => (
-                <ListP>
-                {d}
-                </ListP>
-              ))}
-            </HiddenDiv>
-          </Col>
-            <Col md={{ size: 9, offset:1}}>
+            <Col md={{ size: 9}}>
             <Padded1>
               <H2>{title}</H2>
             </Padded1>
-              <P dangerouslySetInnerHTML={{__html: content.childMarkdownRemark.html}}></P>
             </Col>
           </Row>
+          <Row>
+            <Col>
+              <P dangerouslySetInnerHTML={{__html: content.childMarkdownRemark.html}}></P>
+            </Col>
+            <Col md={{ size: 2}}>
+            <HiddenDiv>
+                <H3>Year</H3>
+                <P>{year}</P>
+                <Padded1></Padded1>
+                <H3>Client</H3>
+                <P>{companyName}</P>
+                <Padded1></Padded1>
+                <H3>Skills</H3>
+                {deliverables.map(d => (
+                  <P>
+                  •{d}
+                  </P>
+                ))}
+              </HiddenDiv>
+            </Col>
+            </Row>
           </Col>
           </Row>
-          </Padded2>
+          </Padded1>
           <Row>
           <Col>
           <Padded2>
           <MasonryLayout>
-          <Padded1>
-  {images.slice(0,2).map(image => (
-    <LayoutPanel>
-    <PanelContent>
-    <Fade bottom>
-    <Img fluid = {image.fluid}></Img>
-    </Fade>
-    </PanelContent>
-    </LayoutPanel>
-  ))}
-  </Padded1>
-  <LayoutPanel>
-  <PanelContent>
-  <Fade bottom>
-  <P>{extraContent}</P>
-  </Fade>
-  </PanelContent>
-  </LayoutPanel>
-  {images.slice(2).map(image => (
+  {images.map(image => (
     <LayoutPanel>
     <PanelContent>
     <Fade bottom>
@@ -117,7 +105,6 @@ query projectQuery($slug: String!){
       slug
     }
     deliverables
-    extraContent
     images {
       description
         fluid {

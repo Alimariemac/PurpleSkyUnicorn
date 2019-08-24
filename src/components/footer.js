@@ -9,7 +9,7 @@ const Footer = ({ siteFooter }) => (
       <Col>
         <Row>
         <Col sm={{ size: 9, order: 2, offset:1}}>
-        <P>Stilton cheddar cream cheese. Feta squirty cheese mascarpone st. agur blue cheese who moved my cheese everyone loves cow dolcelatte. Stinking bishop blue castello parmesan port-salut edam rubber cheese airedale stinking bishop.</P>
+        <P>This website was built on React using Gatsby and Netlify. The morphing background shapes were created in P5.js - you can play around with them <ExtLink target = "_blank"href="https://editor.p5js.org/Alimariemac/present/3BhtINLch">here</ExtLink> and create your own!</P>
 <Padded2></Padded2>
         </Col>
 

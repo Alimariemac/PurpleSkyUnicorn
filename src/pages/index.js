@@ -6,6 +6,7 @@ import { Row, Col} from "reactstrap"
 import config from 'react-reveal/globals';
 import {TopView, leftAlign, StyledLink, ProjectBlock, NumberStyle, P, Padded1, Padded2, H1,H3, H4} from "../style.js"
 import Fade from "react-reveal/Fade"
+import SEO from "../components/seo"
 
 const Project = ({node})=>{
   return(
@@ -17,7 +18,7 @@ const Project = ({node})=>{
               <H3>{node.title}</H3>
               <H4>{node.companyName}</H4>
               <Padded1></Padded1>
-              <P>agur blue cheese who moved my cheese everyone loves cow dolcelatte. Stinking bishop blue castello parmesan port-salut edam rubber cheese airedale stinking bishop.</P>
+              <P>{node.snippet}</P>
               <StyledLink to={node.slug} addCSS = {leftAlign}>See More</StyledLink>
             </ProjectBlock>
             </div>
@@ -30,8 +31,10 @@ const Project = ({node})=>{
 
 const IndexPage = ({data}) => (
   <Layout>
+  <SEO title="Alicia MacCara homepage" />
   <TopView>
 <Row>
+<Fade ssrFadeout bottom>
 <Col>
 
           <H1>Hello, <br></br>Bonjour,
@@ -39,6 +42,7 @@ const IndexPage = ({data}) => (
           こんにちわ.👋</H1>
 
       </Col>
+      </Fade>
       </Row>
       </TopView>
       <Padded2>
@@ -70,6 +74,7 @@ export const pageQuery = graphql`
           order
           year
           companyName
+          snippet
         }
       }
     }

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Link } from "gatsby"
 import React from "react"
 import { css } from 'styled-components'
+import mainImage from "./images/self.png"
 
 var xxs = 370;
 var xs = 576;
@@ -12,7 +13,7 @@ var l = 1400;
 export const Body = styled.div`
 @import url("https://fonts.googleapis.com/css?family=Lato:300,700,family=Noto+Serif+JP:400,600&display=swap");
 
-  color:#000000;
+  color:#333333;
 `
 export const TopView = styled.div `
 padding-top:100px;
@@ -30,7 +31,7 @@ font-family: "Lato", sans-serif;
   font-size: 0.9rem;
 }
 @media (min-width:${l}px) {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 `
 
@@ -68,7 +69,7 @@ font-weight: 600;
   font-size: 5rem;
 }
 @media (min-width:${m}px) {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 @media (min-width:${l}px) {
   font-size: 8rem;
@@ -88,7 +89,7 @@ font-family: "Noto Serif JP", serif;
   font-size: 3rem;
 }
 @media (min-width:${l}px) {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 `
 export const H3 = styled.h3`
@@ -109,13 +110,8 @@ font-size: 0.85rem;
 `
 
 export const MainImage = styled.img`
-z-index: 1;
 height:auto;
 width: 100%;
-@media (min-width:${s}px) {
-  width: 50%;
-  padding-right:15px;
-}
 `
 
 export const FooterImage = styled.img`
@@ -217,42 +213,40 @@ overflow:hidden;
 export const RelDiv1 = styled.div`
 position: relative;
 padding: 0;
-min-height:390px;
+min-height:250px;
 @media (min-width:${xxs}px) {
-  min-height:400px;
+  min-height:250px;
 }
 @media (min-width:${xs}px) {
-min-height:440px;
+min-height:300px;
 }
 @media (min-width:${s}px) {
-min-height:480px;
+min-height:320px;
 }
 @media (min-width:${m}px) {
-  min-height:440px;
+  min-height:400px;
 }
 @media (min-width:${l}px) {
-    min-height:600px;
+    min-height:500px;
 }
 `
 
 export const AbsoluteDiv1= styled.div`
 padding: 0;
 position: absolute;
+right:0;
+top:0;
+width:60%;
+z-index:-1;
 @media (min-width:${xxs}px) {
-  top:60px;
+
 }
 @media (min-width:${xs}px) {
-  top:100px;
+
 }
 @media (min-width:${s}px) {
-  top:110px;
-  padding-left: 25%;
-  padding-top:0px;
-  padding-right:25px;
 }
 @media (min-width:${m}px) {
-  padding-top:10px;
-  top:20%;
 }
 `
 export const Padded1 = styled.div`
@@ -303,11 +297,6 @@ padding-bottom:100px;
 padding-top:100px;
 `
 
-export const ColorDiv = styled.div`
-background-color:#000000;
-width:100%;
-height:auto;
-`
 
 export const HiddenDiv = styled.div`
 display:none;
