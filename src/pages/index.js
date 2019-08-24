@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 const Project = ({node})=>{
   return(
     <Col lg="4" className = "mb-3">
-    <Fade ssrFadeout bottom>
+
     <div>
            <NumberStyle><H3>{node.order}.</H3></NumberStyle>
            <ProjectBlock>
@@ -21,7 +21,6 @@ const Project = ({node})=>{
               <StyledLink to={node.slug} addCSS = {leftAlign}>See More</StyledLink>
             </ProjectBlock>
             </div>
-            </Fade>
     </Col>
 
 
@@ -50,9 +49,11 @@ const IndexPage = ({data}) => (
           <Row>
 
     <Col>
+    <Fade ssrFadeout bottom>
       <Row id = "projectSection">
           {data.allContentfulProject.edges.map((edge) => <Project node= {edge.node} />)}
         </Row>
+        </Fade>
         </Col>
   </Row>
   </Layout>

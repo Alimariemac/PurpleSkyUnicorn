@@ -10,13 +10,14 @@ const AboutPage = () => (
     <TopView>
     <SEO title="About" />
     <RelDiv1>
-
       <AbsoluteDiv1>
       <HiddenDiv>
         <MainImage src = {mainImage}></MainImage>
       </HiddenDiv>
       </AbsoluteDiv1>
-      <H1>Coder<br></br>Creative<br></br>Designer</H1>
+        <Fade ssrFadeout bottom>
+          <H1>Coder<br></br>Creative<br></br>Designer</H1>
+        </Fade>
     </RelDiv1>
     </TopView>
     <Padded1></Padded1>
