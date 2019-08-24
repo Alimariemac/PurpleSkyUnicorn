@@ -1,5 +1,4 @@
 import React from "react"
-import {Link} from "gatsby"
 import {Top, rightAlign, leftAlign, StyledLink} from "../style.js"
 import {Row, Col} from 'reactstrap'
 

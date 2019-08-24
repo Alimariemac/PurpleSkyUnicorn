@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Row, Col} from "reactstrap"
-import config from 'react-reveal/globals';
 import {TopView, leftAlign, StyledLink, ProjectBlock, NumberStyle, P, Padded1, Padded2, H1,H3, H4} from "../style.js"
 import Fade from "react-reveal/Fade"
 import SEO from "../components/seo"

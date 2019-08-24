@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {TopView, Padded1,MainImage, H1, RelDiv1, AbsoluteDiv1, HiddenDiv, P, ExtLink} from "../style.js"
-import Img from "gatsby-image"
 import Fade from "react-reveal/Fade"
 import mainImage from "../images/self.png"
 

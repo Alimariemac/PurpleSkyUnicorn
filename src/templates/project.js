@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import {Row, Col} from 'reactstrap'
-import {rightAlign, leftAlign, StyledLink, HiddenDiv, LayoutPanel, PanelContent, MasonryLayout, IndentP, ListP, P, Padded1, Padded2,H2, H3, H1} from "../style.js"
+import {rightAlign, leftAlign, StyledLink, HiddenDiv, LayoutPanel, PanelContent, MasonryLayout, P, Padded1, Padded2,H2, H3} from "../style.js"
 import Fade from "react-reveal/Fade"
 import SEO from "../components/seo"
 
@@ -14,7 +14,6 @@ class Project extends Component {
       title,
       companyName,
       year,
-      extraContent,
       images,
       content,
       deliverables,
