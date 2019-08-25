@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { Link } from "gatsby"
 import React from "react"
 import { css } from 'styled-components'
-import mainImage from "./images/self.png"
 
 var xxs = 370;
 var xs = 576;
