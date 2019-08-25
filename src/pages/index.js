@@ -32,7 +32,6 @@ const IndexPage = ({data}) => (
   <SEO title="Alicia MacCara homepage" />
   <TopView>
 <Row>
-<Fade ssrFadeout bottom>
 <Col>
 
           <H1>Hello, <br></br>Bonjour,
@@ -40,7 +39,6 @@ const IndexPage = ({data}) => (
           こんにちわ.👋</H1>
 
       </Col>
-      </Fade>
       </Row>
       </TopView>
       <Padded2>

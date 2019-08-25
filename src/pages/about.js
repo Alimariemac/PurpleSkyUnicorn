@@ -15,9 +15,7 @@ const AboutPage = () => (
         <MainImage src = {mainImage}></MainImage>
       </HiddenDiv>
       </AbsoluteDiv1>
-        <Fade ssrFadeout bottom>
           <H1>Coder<br></br>Creative<br></br>Designer</H1>
-        </Fade>
     </RelDiv1>
     </TopView>
     <Padded1></Padded1>
