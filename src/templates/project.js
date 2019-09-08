@@ -22,7 +22,7 @@ class Project extends Component {
     } = this.props.data.contentfulProject
     return (
       <Layout>
-      <SEO title={companyName} />
+      <SEO title={title} />
       <Padded1>
       <Row>
         <Col>
