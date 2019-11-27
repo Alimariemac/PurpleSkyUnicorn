@@ -21,7 +21,7 @@ const AboutPage = () => (
     <Padded1></Padded1>
     <Fade ssrFadeout bottom>
     <P>
-    I am a designer (currently designing @ <strong>Foursquare</strong>) who enjoys playing with code. I spend my free time building silly apps (currently refining a <strong>"divebar roulette" app </strong>), carving out block prints, and reading (current book: <strong>"100 Years of Solitude"</strong> by Gabriel García Márquez).
+    I am a designer (currently designing @ <strong>Foursquare</strong>) who enjoys playing with code. I spend my free time building silly apps (currently refining a <strong>"divebar roulette" app </strong>), carving out block prints, and reading (current book: <strong>"The Mysterious Island"</strong> by Jules Verne).
     <br></br>
     <br></br>
     In my past-life I was an English/Kindergarten teacher in Tokyo, a marketer at a company that makes pasta out of crickets and a C# bootcamp participant.
