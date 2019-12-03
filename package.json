@@ -17,7 +17,11 @@
     "gatsby-plugin-react-helmet": "^3.1.0",
     "gatsby-plugin-sharp": "^2.2.2",
     "gatsby-plugin-styled-components": "^3.1.0",
+<<<<<<< HEAD
     "gatsby-source-contentful": "^2.1.14",
+=======
+    "gatsby-source-contentful": "^2.1.36-rich-text-resolve.14",
+>>>>>>> rich text update
     "gatsby-source-filesystem": "^2.1.2",
     "gatsby-transformer-remark": "^2.6.1",
     "gatsby-transformer-sharp": "^2.2.1",
