@@ -36,7 +36,7 @@ const IndexPage = ({data}) => (
 
           <H1>Hello, <br></br>Bonjour,
           <br></br>
-         Doumo.👋</H1>
+         Domo.👋</H1>
 
       </Col>
       </Row>
