@@ -60,12 +60,12 @@ font-size: 0.75rem;
 }
 `
 export const H1 = styled.h1`
-font-size: 4rem;
+font-size: 2.5rem;
 font-family: "Noto Serif JP", serif;
 font-weight: 600;
 
 @media (min-width:${xs}px) {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 @media (min-width:${m}px) {
   font-size: 6rem;
