@@ -10,7 +10,7 @@ var m = 992;
 var l = 1400;
 
 export const Body = styled.div`
-@import url("https://fonts.googleapis.com/css?family=Lato:300,700,family=Noto+Serif+JP:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700&display=swap");
 
   color:#333333;
 `
@@ -39,7 +39,7 @@ export const MenuP = styled(P)`
 font-size: 0.9rem;
 font-weight: 400;
 margin-bottom:0;
-font-family: "Noto Serif JP", serif;
+font-family: "Lato", sans-serif;
 @media (min-width:${s}px) {
   font-size: 1rem;
 }
@@ -61,7 +61,7 @@ font-size: 0.75rem;
 `
 export const H1 = styled.h1`
 font-size: 4rem;
-font-family: "Noto Serif JP", serif;
+font-family: "Lato", sans-serif;
 font-weight: 600;
 
 @media (min-width:${xs}px) {
@@ -77,7 +77,7 @@ font-weight: 600;
 export const H2 = styled.h2`
 font-size: 1.8rem;
 font-weight:600;
-font-family: "Noto Serif JP", serif;
+font-family: "Lato", sans-serif;
 @media (min-width:${xs}px) {
   font-size: 2.2rem;
 }
@@ -348,7 +348,7 @@ export const StyledLink = styled(props => <Link {...props} />)`
   font-size: 0.9rem;
   font-weight: 400;
   margin-bottom:0;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Lato", sans-serif;
   color:black;
   background: linear-gradient( to bottom, #fff 0%, #FFEBEA 100% );
   background-position: 0 100%;
@@ -371,7 +371,7 @@ export const ExtLink = styled.a`
 font-size: 0.9rem;
 font-weight: 400;
 margin-bottom:0;
-font-family: "Noto Serif JP", serif;
+font-family: "Lato", sans-serif;
 color:black;
 background: linear-gradient( to bottom, #fff 0%, #FFEBEA 100% );
 background-position: 0 100%;
