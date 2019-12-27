@@ -15,7 +15,7 @@ const AboutPage = () => (
         <MainImage src = {mainImage}></MainImage>
       </HiddenDiv>
       </AbsoluteDiv1>
-          <H1>Coder<br></br>Creative<br></br>Designer</H1>
+          <H1>Designer<br></br>Creative<br></br>Coder</H1>
     </RelDiv1>
     </TopView>
     <Padded1></Padded1>
