@@ -17,6 +17,7 @@ const Project = ({node})=>{
               <H3>{node.title}</H3>
               <H4>{node.companyName}</H4>
               <P>{node.snippet}</P>
+              <Padded1></Padded1>
               <StyledLink to={node.slug} addCSS = {leftAlign}>See More</StyledLink>
             </ProjectBlock>
             </div>
