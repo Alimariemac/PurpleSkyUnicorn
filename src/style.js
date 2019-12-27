@@ -10,7 +10,7 @@ var m = 992;
 var l = 1400;
 
 export const Body = styled.div`
-@import url("https://fonts.googleapis.com/css?family=Lato:300,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime|Lato:300,700&display=swap");
 
   color:#333333;
 `
@@ -348,7 +348,7 @@ export const StyledLink = styled(props => <Link {...props} />)`
   font-size: 0.9rem;
   font-weight: 400;
   margin-bottom:0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Courier Prime', monospace;
   color:black;
   background: linear-gradient( to bottom, #fff 0%, #FFEBEA 100% );
   background-position: 0 100%;
@@ -371,7 +371,7 @@ export const ExtLink = styled.a`
 font-size: 0.9rem;
 font-weight: 400;
 margin-bottom:0;
-font-family: "Lato", sans-serif;
+font-family: 'Courier Prime', monospace;
 color:black;
 background: linear-gradient( to bottom, #fff 0%, #FFEBEA 100% );
 background-position: 0 100%;
