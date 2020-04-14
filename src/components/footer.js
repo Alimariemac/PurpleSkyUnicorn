@@ -23,7 +23,7 @@ const Footer = ({ siteFooter }) => (
          <ExtLink href = "https://www.linkedin.com/in/aliciamariemaccara/" addCSS = {leftAlign}>LinkedIn</ExtLink>
          </Col>
          <Col>
-         <ExtLink href = "https://www.instagram.com/alimariemac/" addCSS = {leftAlign}>Instagram</ExtLink>
+         <ExtLink href = "https://github.com/Alimariemac" addCSS = {leftAlign}>Github</ExtLink>
          </Col>
          </Row>
          </Col>
